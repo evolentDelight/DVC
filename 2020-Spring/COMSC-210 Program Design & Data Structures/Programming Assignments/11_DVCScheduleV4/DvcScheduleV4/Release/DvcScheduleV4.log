@@ -1,0 +1,11 @@
+﻿  DvcScheduleV4.cpp
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\11_DVCScheduleV4\DvcScheduleV4\DvcScheduleV4.cpp(27,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\11_DVCScheduleV4\DvcScheduleV4\DvcScheduleV4.cpp(32,50): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\11_DVCScheduleV4\DvcScheduleV4\DvcScheduleV4.cpp(36,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\11_DVCScheduleV4\DvcScheduleV4\DvcScheduleV4.cpp(40,50): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  Generating code
+  197 of 510 functions (38.6%) were compiled, the rest were copied from previous compilation.
+    173 functions were new in current compilation
+    64 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  DvcScheduleV4.vcxproj -> C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\11_DVCScheduleV4\Release\DvcScheduleV4.exe

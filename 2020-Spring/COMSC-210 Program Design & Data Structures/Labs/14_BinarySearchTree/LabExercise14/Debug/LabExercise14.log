@@ -1,0 +1,15 @@
+﻿  LabExercise14.cpp
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Labs\14_BinarySearchTree\LabExercise14\LabExercise14.h(165,20): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Labs\14_BinarySearchTree\LabExercise14\LabExercise14.h(144): message : while compiling class template member function 'void BinarySearchTree<std::string,int>::deleteKey(const K &)'
+          with
+          [
+              K=std::string
+          ]
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Labs\14_BinarySearchTree\LabExercise14\LabExercise14.cpp(30): message : see reference to function template instantiation 'void BinarySearchTree<std::string,int>::deleteKey(const K &)' being compiled
+          with
+          [
+              K=std::string
+          ]
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Labs\14_BinarySearchTree\LabExercise14\LabExercise14.cpp(11): message : see reference to class template instantiation 'BinarySearchTree<std::string,int>' being compiled
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Labs\14_BinarySearchTree\LabExercise14\LabExercise14.h(168,21): warning C4553: '==': result of expression not used; did you intend '='?
+  LabExercise14.vcxproj -> C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Labs\14_BinarySearchTree\Debug\LabExercise14.exe

@@ -1,0 +1,6 @@
+﻿  DynamicArray.cpp
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Labs\4_DynamicArray\DynamicArray\LabExercise4.h(25,3): error C2143: syntax error: missing ';' before '<template-id>'
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Labs\4_DynamicArray\DynamicArray\LabExercise4.h(30): message : see reference to class template instantiation 'DynamicArray<T>' being compiled
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Labs\4_DynamicArray\DynamicArray\LabExercise4.h(40,3): error C2760: syntax error: unexpected token 'for', expected ';'
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Labs\4_DynamicArray\DynamicArray\LabExercise4.h(49,16): error C2760: syntax error: unexpected token 'identifier', expected 'type specifier'
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Labs\4_DynamicArray\DynamicArray\LabExercise4.h(60,30): error C2760: syntax error: unexpected token ':', expected 'expression'

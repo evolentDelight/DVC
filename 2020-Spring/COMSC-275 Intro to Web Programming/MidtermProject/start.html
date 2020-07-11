@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather in Major City</title>
+</head>
+<script>
+
+var myReq = new XMLHttpRequest();
+
+function searchWeather(value, event){
+    var thePage;
+    var theURL;
+    var keyCode = event.keyCode;
+
+    if(keyCode == "13"){
+        thePage = "searchMetaWeather.py";
+        theURL = thePage + "?city=" + value;
+
+        myReq.onreadystatechange = theHTTPResponse2;
+    }
+    else{
+        thePage = "searchCity.py";
+        theURL = thePage + "?city=" + value;
+        myReq.onreadystatechange = theHTTPResponse;
+    }
+
+    myRand = parseInt(Math.random()*999999999999999);
+
+    theURL = theURL + "&rand=" + myRand;
+
+    myReq.open("GET", theURL, true);
+
+    myReq.send(null);
+}
+
+function theHTTPResponse(){
+    if(myReq.readyState == 4 && myReq.status == 200){
+        document.getElementById("PossibleInputs").innerHTML = myReq.responseText;
+    }
+}
+
+function theHTTPResponse2(){
+    var out = "";
+
+    if(myReq.readyState == 4 && myReq.status == 200){
+
+        if(myReq.responseText.length <= 1000){
+
+            out = "Output Not Available";
+
+        }
+        else{
+            //Output Format
+            var JSONObj = JSON.parse(myReq.responseText);
+
+            var name = JSONObj.title;
+            var state = JSONObj.parent.title;
+            var timezone = JSONObj.timezone;
+            out += "<h2>" + name + ", " + state + " - " + timezone + "</h2>";
+
+            var trim = JSONObj.consolidated_weather;
+
+        //Today's Weather
+            out += "<h3>Today's weather</h3><br>";
+
+            var today = trim[0].applicable_date;
+            out += "<strong>Today's Date: </strong>" + today + "<br>";
+
+            var weatherstate = trim[0].weather_state_name;
+
+            var currentTemp = trim[0].the_temp;//Temp In Celsius
+            currentTemp = currentTemp.toFixed(2);
+            var minTemp = trim[0].min_temp;
+            minTemp = minTemp.toFixed(2);
+            var maxTemp = trim[0].max_temp;
+            maxTemp = maxTemp.toFixed(2);
+
+            var windSpeed = trim[0].wind_speed;//Wind in MPH
+            windSpeed = windSpeed.toFixed(2);
+
+            var humidity = trim[0].humidity;//In Percentage
+
+            out += "<strong>Weather State: </strong>" + weatherstate + "<br>";
+            out += "<strong>Current Temperature: </strong>" + currentTemp + " C<br>";
+            out += "<strong>Minimum Temperature: </strong>" + minTemp + " C<br>";
+            out += "<strong>Maximum Temperature: </strong>" + maxTemp + " C<br>";
+            out += "<strong>Wind Speed: </strong>" + windSpeed + "mph<br>";
+            out += "<strong>Humidity: </strong>" + humidity + "%<br>";
+
+            out += "<br><br>";
+
+        //Next Day
+            out += "<h3> Weather Forecast </h3><br>";
+
+            var today = trim[1].applicable_date;
+            out += "<strong>Date: </strong>" + today + "<br>";
+
+            var weatherstate = trim[1].weather_state_name;
+
+            var currentTemp = trim[1].the_temp;//Temp In Celsius
+            currentTemp = currentTemp.toFixed(2);
+            var minTemp = trim[1].min_temp;
+            minTemp = minTemp.toFixed(2);
+            var maxTemp = trim[1].max_temp;
+            maxTemp = maxTemp.toFixed(2);
+
+            var windSpeed = trim[1].wind_speed;//Wind in MPH
+            windSpeed = windSpeed.toFixed(2);
+
+            var humidity = trim[1].humidity;//In Percentage
+
+            out += "<strong>Weather State: </strong>" + weatherstate + "<br>";
+            out += "<strong>Current Temperature: </strong>" + currentTemp + " C<br>";
+            out += "<strong>Minimum Temperature: </strong>" + minTemp + " C<br>";
+            out += "<strong>Maximum Temperature: </strong>" + maxTemp + " C<br>";
+            out += "<strong>Wind Speed: </strong>" + windSpeed + "mph<br>";
+            out += "<strong>Humidity: </strong>" + humidity + "%<br>";
+
+            out += "<br><br>";
+
+        //Next Day + 1
+            var today = trim[2].applicable_date;
+            out += "<strong>Date: </strong>" + today + "<br>";
+
+            var weatherstate = trim[2].weather_state_name;
+
+            var currentTemp = trim[2].the_temp;//Temp In Celsius
+            currentTemp = currentTemp.toFixed(2);
+            var minTemp = trim[2].min_temp;
+            minTemp = minTemp.toFixed(2);
+            var maxTemp = trim[2].max_temp;
+            maxTemp = maxTemp.toFixed(2);
+
+            var windSpeed = trim[2].wind_speed;//Wind in MPH
+            windSpeed = windSpeed.toFixed(2);
+
+            var humidity = trim[2].humidity;//In Percentage
+
+            out += "<strong>Weather State: </strong>" + weatherstate + "<br>";
+            out += "<strong>Current Temperature: </strong>" + currentTemp + " C<br>";
+            out += "<strong>Minimum Temperature: </strong>" + minTemp + " C<br>";
+            out += "<strong>Maximum Temperature: </strong>" + maxTemp + " C<br>";
+            out += "<strong>Wind Speed: </strong>" + windSpeed + "mph<br>";
+            out += "<strong>Humidity: </strong>" + humidity + "%<br>";
+
+            out += "<br><br>";
+
+        //Next Day + 2
+            var today = trim[3].applicable_date;
+            out += "<strong>Date: </strong>" + today + "<br>";
+
+            var weatherstate = trim[3].weather_state_name;
+
+            var currentTemp = trim[3].the_temp;//Temp In Celsius
+            currentTemp = currentTemp.toFixed(2);
+            var minTemp = trim[3].min_temp;
+            minTemp = minTemp.toFixed(2);
+            var maxTemp = trim[3].max_temp;
+            maxTemp = maxTemp.toFixed(2);
+
+            var windSpeed = trim[3].wind_speed;//Wind in MPH
+            windSpeed = windSpeed.toFixed(2);
+
+            var humidity = trim[3].humidity;//In Percentage
+
+            out += "<strong>Weather State: </strong>" + weatherstate + "<br>";
+            out += "<strong>Current Temperature: </strong>" + currentTemp + " C<br>";
+            out += "<strong>Minimum Temperature: </strong>" + minTemp + " C<br>";
+            out += "<strong>Maximum Temperature: </strong>" + maxTemp + " C<br>";
+            out += "<strong>Wind Speed: </strong>" + windSpeed + "mph<br>";
+            out += "<strong>Humidity: </strong>" + humidity + "%<br>";
+
+            out += "<br><br>";
+
+        //Next Day + 3
+            var today = trim[4].applicable_date;
+            out += "<strong>Date: </strong>" + today + "<br>";
+
+            var weatherstate = trim[4].weather_state_name;
+
+            var currentTemp = trim[4].the_temp;//Temp In Celsius
+            currentTemp = currentTemp.toFixed(2);
+            var minTemp = trim[4].min_temp;
+            minTemp = minTemp.toFixed(2);
+            var maxTemp = trim[4].max_temp;
+            maxTemp = maxTemp.toFixed(2);
+
+            var windSpeed = trim[4].wind_speed;//Wind in MPH
+            windSpeed = windSpeed.toFixed(2);
+
+            var humidity = trim[4].humidity;//In Percentage
+
+            out += "<strong>Weather State: </strong>" + weatherstate + "<br>";
+            out += "<strong>Current Temperature: </strong>" + currentTemp + " C<br>";
+            out += "<strong>Minimum Temperature: </strong>" + minTemp + " C<br>";
+            out += "<strong>Maximum Temperature: </strong>" + maxTemp + " C<br>";
+            out += "<strong>Wind Speed: </strong>" + windSpeed + "mph<br>";
+            out += "<strong>Humidity: </strong>" + humidity + "%<br>";
+
+            out += "<br><br>";
+
+        //Next Day + 4
+            var today = trim[5].applicable_date;
+            out += "<strong>Date: </strong>" + today + "<br>";
+
+            var weatherstate = trim[5].weather_state_name;
+
+            var currentTemp = trim[5].the_temp;//Temp In Celsius
+            currentTemp = currentTemp.toFixed(2);
+            var minTemp = trim[5].min_temp;
+            minTemp = minTemp.toFixed(2);
+            var maxTemp = trim[5].max_temp;
+            maxTemp = maxTemp.toFixed(2);
+
+            var windSpeed = trim[5].wind_speed;//Wind in MPH
+            windSpeed = windSpeed.toFixed(2);
+
+            var humidity = trim[5].humidity;//In Percentage
+
+            out += "<strong>Weather State: </strong>" + weatherstate + "<br>";
+            out += "<strong>Current Temperature: </strong>" + currentTemp + " C<br>";
+            out += "<strong>Minimum Temperature: </strong>" + minTemp + " C<br>";
+            out += "<strong>Maximum Temperature: </strong>" + maxTemp + " C<br>";
+            out += "<strong>Wind Speed: </strong>" + windSpeed + "mph<br>";
+            out += "<strong>Humidity: </strong>" + humidity + "%<br>";
+
+            out += "<br><br>";
+
+            out += "Response Text:<br>"+myReq.responseText + "<br >";
+        }
+     }
+
+    document.getElementById("weatherValue").innerHTML = out;
+}
+
+</script>
+
+<body>
+<h1>Weather in Most Major City</h1><br/>
+
+Enter Name of Major City: <input type="text" id="cityname"
+                                   onkeyup="searchWeather(this.value, event)"/>
+<br/><br/>
+
+Possible Inputs: <span id="PossibleInputs"></span><br>
+*Please wait for the possible inputs to load*<br/>
+*Enter at least three characters to minimize search time*<br/>
+
+<br/><br/>
+
+Results: <br/>
+<span id="weatherValue"></span>
+
+</body>
+</html>

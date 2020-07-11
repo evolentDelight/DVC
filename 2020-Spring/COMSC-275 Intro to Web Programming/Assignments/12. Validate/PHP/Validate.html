@@ -1,0 +1,160 @@
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+function validateFname (){
+            //alert("validateFname");//Debugging technique
+
+            var fname,span;
+            var retValue=true;
+            
+            //alert("validateFname2");
+
+            fname = document.getElementById("idFname").value;
+            span=document.getElementById("idSpanFname");
+            span.innerHTML = "";
+            
+            //alert("fname" + fname);
+            
+            if (fname==null || fname=="")
+            {                     
+                        span.innerHTML = "Required field. Enter value.";
+                        retValue = false;
+            }
+            else if (!fname.match(/^[A-Za-z]+$/)){ 
+                        span.innerHTML = "Letters only field. Re-enter value.";
+                        retValue = false;           
+            }
+            return retValue;
+}
+
+function validateLname (){
+            //alert("validateLname");
+
+            var lname,span;
+            var retValue=true;
+
+            lname = document.getElementById("idLname").value;
+            span=document.getElementById("idSpanLname");
+            span.innerHTML = "";
+            
+            //alert("lname" + lname);
+            
+            if (lname==null || lname=="")
+            {                     
+                        span.innerHTML = "Required field. Enter value.";
+                        retValue = false;
+            }
+            else if (!lname.match(/^[A-Za-z]+$/)){ 
+                        span.innerHTML = "Letters only field. Re-enter value.";
+                        retValue = false;           
+            }
+            return retValue;
+}
+
+function validatePhone (){
+            //alert("validatePhone");
+
+            var phone1, phone2, phone3, span;
+            var retValue=true;
+
+            phone1 = document.getElementById("idPhoneArea").value;
+            phone2 = document.getElementById("idPhonePrefix").value;
+            phone3 = document.getElementById("idPhoneFour").value;
+            span=document.getElementById("idSpanPhone");
+            span.innerHTML = "";
+            
+            //alert('phoneArea: ' + phone1 + ' phonePrefix: ' + phone2 + ' phoneFour: ' + phone3);
+            if ((phone1==null || phone1=="") || (phone2==null || phone2=="") || (phone3==null || phone3==""))
+            {                     
+                        span.innerHTML = "Required field. Enter value.";
+                        retValue = false;
+                        return retValue;
+            }
+            else if ((!phone1.match(/^\d+$/)) || (!phone2.match(/^\d+$/)) || (!phone3.match(/^\d+$/))){ 
+                        span.innerHTML = "Numbers only field. Re-enter value.";
+                        retValue = false;           
+            }
+            return retValue;
+}
+
+function validateEmail(){
+            //alert("validateEmail");
+
+            var email,span;
+            var retValue=true;
+
+            email = document.getElementById("idEmail").value;
+            span=document.getElementById("idSpanEmail");
+            span.innerHTML = "";
+            
+            
+            //alert("email: " + email);
+            if (email==null || email=="")
+            {                     
+                        span.innerHTML = "Required field. Enter value.";
+                        retValue = false;
+            }
+            else if (!email.match(/\S+@\S+\.\S+/)){ 
+                        span.innerHTML = "Must be in email@domain.com format. Re-enter value.";
+                        retValue = false;           
+            }
+            return retValue;
+}
+
+function validate (){
+            var ret1=true, ret2=true, ret3=true, ret4=true;
+            ret1=validateFname ();
+            ret2=validateLname ();
+            ret3=validatePhone ();
+            ret4=validateEmail ();
+            return (ret1&&ret2&&ret3&&ret4);
+}
+</script>
+
+<form name="frmInfo" onsubmit="return validate()" action="Response.php"  method="post">
+      
+First Name
+<span style="color:red">*</span>
+<input type="text" name="fname" id="idFname" cols="10"
+       onchange="validateFname()">
+<span style="color:red" id="idSpanFname"></span><br />
+
+Last Name
+<span style="color:red">*</span>
+<input type="text" name="lname" id="idLname" cols="10"
+        onchange = "validateLname()">
+<span style="color:red" id="idSpanLname"></span><br/>
+
+Phone Number
+<span style="color:red">*</span>
+<input type="text" name="phoneArea" id="idPhoneArea" maxlength="3" size="3" placeholder="Area"
+        onchange = "validatePhone()">
+<input type="text" name="phonePrefix" id="idPhonePrefix" maxlength="3" size="3" placeholder="Prefix"
+        onchange = "validatePhone()">
+<input type="text" name="phoneFour" id="idPhoneFour" maxlength="4" size="4" placeholder="Last Four"
+        onchange = "validatePhone()">
+<span style="color:red" id="idSpanPhone"></span><br/>
+
+Email
+<span style="color:red">*</span>
+<input type="text" name="email" id="idEmail" cols="10"
+        onchange = "validateEmail()">
+<span style="color:red" id="idSpanEmail"></span><br/>
+
+<input type="submit" name="submit" value="Submit">
+
+</form>
+
+</body>
+
+</html>

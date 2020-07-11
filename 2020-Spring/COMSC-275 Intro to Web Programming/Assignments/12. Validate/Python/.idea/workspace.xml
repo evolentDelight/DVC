@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="063813a2-433c-454e-ba03-0feee5efc007" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YxRAqK2cCeCXbcBBzCIGaoHLUg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-275 Intro to Web Programming\Assignments\12. Validate" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="063813a2-433c-454e-ba03-0feee5efc007" name="Default Changelist" comment="" />
+      <created>1583882117812</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583882117812</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="571" y="277" key="FileChooserDialogImpl" timestamp="1585085895588">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="571" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585085895588" />
+    <state x="923" y="337" key="com.intellij.ide.util.TipDialog" timestamp="1585085879558">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="923" y="337" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585085879558" />
+    <state x="47" y="87" width="896" height="771" key="dock-window-1" timestamp="1585686646205">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="47" y="87" width="896" height="771" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1585686646205" />
+    <state x="9" y="0" width="896" height="771" key="dock-window-2" timestamp="1585687129374">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="9" y="0" width="896" height="771" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1585687129374" />
+    <state x="949" y="251" width="672" height="678" key="search.everywhere.popup" timestamp="1585686749420">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="949" y="251" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585686749420" />
+  </component>
+</project>

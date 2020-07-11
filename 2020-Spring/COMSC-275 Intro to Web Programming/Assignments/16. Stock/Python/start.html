@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<script>
+// create XMLHttpRequest object as a global variable
+
+var myReq = new XMLHttpRequest();
+// The function below is invoked on pressing any key and releasing it
+// in text field.
+
+// It communicates with object XMLHttpRequest to perform ajax
+// It sets up in the object the callback method to be called and the
+// url of the script to be invoked and query string to be passed to it.
+// The query string contains partially typed symbol and a random number.
+// The random number is used to make the url unique and avoid
+// getting the cached response.
+
+function searchStock(value,event) {
+
+        //alert("searchStock");
+
+        var thePage;
+        var theURL;
+        var keyCode = event.keyCode;
+
+        if(keyCode=="13"){
+                thePage = "searchStock.py";
+                theURL = thePage +"?symbol=" + value;
+
+                var format = document.getElementById("idFormat").value;
+
+                theURL = theURL + "&format=" + format;
+
+                myReq.onreadystatechange = theHTTPResponse2;
+        }
+        else {
+                thePage = "searchSymbol.py";
+                theURL = thePage +"?symbol=" + value;
+                myReq.onreadystatechange = theHTTPResponse;
+
+        }
+
+        myRand = parseInt(Math.random()*999999999999999);
+
+        theURL = theURL +"&rand="+myRand;
+
+        myReq.open("GET", theURL, true);
+        //alert ("searchStock2");
+        myReq.send(null);
+        //alert ("searchStock3");
+}
+
+// The following callback function is called by object XMLHttpRequest
+// whenever its ready state changes. When ready state is 4
+// (i.e. request is completed) and HTTP status is 200 (i.e. OK),
+// it copies the script response in the span.
+
+function theHTTPResponse() {
+        //alert("theHTTPResponse");
+        if (myReq.readyState == 4 && myReq.status == 200) {
+                //alert("theHTTPResponse: "+ myReq.responseText);
+                document.getElementById("idStockGuess").innerHTML =
+                        myReq.responseText;
+
+    }
+}
+
+function theHTTPResponse2() {
+
+    //alert("theHTTPResponse2 "+myReq.readyState);
+    //alert("theHTTPResponse2 "+myReq.status);
+
+    if (myReq.readyState == 4 && myReq.status == 200) {
+
+        //alert("Response Text: " + myReq.responseText.length);
+
+        var format = document.getElementById("idFormat").value;
+
+        var out="";
+
+        switch (format){
+
+        case "csv":
+
+            if (myReq.responseText.length<=1){
+
+                out="csv format not available";
+
+            }
+
+            break;
+
+        case "xml":
+
+            if (myReq.responseText.length<=1){
+
+                out="xml format not available";
+
+            }
+
+            break;
+
+        case "json":
+
+            if (myReq.responseText.length<=1){
+
+                out="json format not available";
+
+            }
+
+            else {
+                var JSONObj = JSON.parse(myReq.responseText);
+                var symbol = JSONObj.quoteResponse.result[0].symbol;
+                var name = JSONObj.quoteResponse.result[0].longName;
+                var bid = JSONObj.quoteResponse.result[0].bid;
+                var ask = JSONObj.quoteResponse.result[0].ask;
+                var open = JSONObj.quoteResponse.result[0].regularMarketOpen;
+                var dayLow = JSONObj.quoteResponse.result[0].regularMarketDayLow;
+                var dayHigh = JSONObj.quoteResponse.result[0].regularMarketDayHigh;
+
+                out += "Symbol: " + symbol + "<br>";
+                out += "Name: " + name + "<br>";
+                out += "Bidding Price: " + bid + "<br>";
+                out += "Asking Price: " + ask + "<br>";
+                out += "Opening Price " + open + "<br>";
+                out += "Daylow Price: " + dayLow + "<br>";
+                out += "Dayhigh Price: " + dayHigh + "<br>";
+                out += "Response Text:<br>"+myReq.responseText + "<br >";
+
+            }
+            break;
+        default:
+            out="format not available";
+
+            break;
+        }
+
+        document.getElementById("idStockValue").innerHTML=out;
+    }
+}
+
+//The following function is invoked on clicking the span.
+//It copies the content of the span (i.e. script response) to text field.
+function setStock(stock){
+            document.getElementById("idStock").value = stock;
+}
+
+</script>
+
+</head>
+
+<body>
+Stock Symbol<input type="text" id="idStock"
+
+             onkeyup="searchStock(this.value,event)" />
+Data Format
+<select name="format" id="idFormat">
+        <option value="csv" selected>CSV</option>
+        <option value="json">JSON</option>
+        <option value="xml">XML</option>
+</select><br />
+
+Symbols <span id="idStockGuess"
+            onclick="setStock(this.innerHTML)">
+      </span><br />
+
+Values<br />
+<span id="idStockValue" ></span><br />
+
+</body>
+
+</html>

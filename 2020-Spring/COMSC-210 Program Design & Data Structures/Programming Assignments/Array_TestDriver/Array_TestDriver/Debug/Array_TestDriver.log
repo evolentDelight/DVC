@@ -1,0 +1,6 @@
+﻿MyArray.obj : error LNK2005: "public: __thiscall Array::Array(void)" (??0Array@@QAE@XZ) already defined in Array_TestDriver.obj
+MyArray.obj : error LNK2005: "public: int & __thiscall Array::operator[](int)" (??AArray@@QAEAAHH@Z) already defined in Array_TestDriver.obj
+MyArray.obj : error LNK2005: "public: int __thiscall Array::operator[](int)const " (??AArray@@QBEHH@Z) already defined in Array_TestDriver.obj
+MyArray.obj : error LNK2005: "public: int __thiscall Array::capacity(void)const " (?capacity@Array@@QBEHXZ) already defined in Array_TestDriver.obj
+MyArray.obj : error LNK2005: _main already defined in Array_TestDriver.obj
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\Array_TestDriver\Debug\Array_TestDriver.exe : fatal error LNK1169: one or more multiply defined symbols found

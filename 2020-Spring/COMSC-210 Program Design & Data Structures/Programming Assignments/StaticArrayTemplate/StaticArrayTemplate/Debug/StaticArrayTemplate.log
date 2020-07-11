@@ -1,0 +1,169 @@
+﻿  StaticArray.TestDriver.cpp
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.h(18,1): error C2556: 'T &StaticArray<T,25>::operator [](int)': overloaded function differs only by return type from 'T StaticArray<T,25>::operator [](int)'
+          with
+          [
+              T=int
+          ]
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.h(17): message : see declaration of 'StaticArray<int,25>::operator []'
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(17): message : see reference to class template instantiation 'StaticArray<int,25>' being compiled
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.h(18,6): error C2040: 'StaticArray<int,25>::operator []': 'T &(int)' differs in levels of indirection from 'T (int)'
+          with
+          [
+              T=int
+          ]
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(25,5): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(25,5): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(30,6): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(30,6): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(31,7): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(31,7): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(32,7): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(32,7): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(35,28): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(35,28): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(36,3): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(36,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(39,29): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(39,29): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(40,3): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(40,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(43,29): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(43,29): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(44,3): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(44,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(47,8): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(47,8): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(50,30): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(50,30): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(51,3): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(51,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(54,30): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(54,30): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(55,3): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(55,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(59,3): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(59,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(60,3): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(60,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(61,3): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(61,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(62,3): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(62,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(68,5): error C2264: 'StaticArray<int,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(68,5): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(68,5): error C2678: binary '[': no operator found which takes a left-hand operand of type 'const StaticArray<int,25>' (or there is no acceptable conversion)
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.h(17,5): message : could be 'T StaticArray<T,25>::operator [](int)'
+          with
+          [
+              T=int
+          ]
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(68,5): message : while trying to match the argument list '(const StaticArray<int,25>, int)'
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(76,3): error C2678: binary '[': no operator found which takes a left-hand operand of type 'const StaticArray<int,25>' (or there is no acceptable conversion)
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.h(17,5): message : could be 'T StaticArray<T,25>::operator [](int)'
+          with
+          [
+              T=int
+          ]
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(76,3): message : while trying to match the argument list '(const StaticArray<int,25>, int)'
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(76,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(77,3): error C2678: binary '[': no operator found which takes a left-hand operand of type 'const StaticArray<int,25>' (or there is no acceptable conversion)
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.h(17,5): message : could be 'T StaticArray<T,25>::operator [](int)'
+          with
+          [
+              T=int
+          ]
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(77,3): message : while trying to match the argument list '(const StaticArray<int,25>, int)'
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(77,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.h(18,1): error C2556: 'T &StaticArray<T,25>::operator [](int)': overloaded function differs only by return type from 'T StaticArray<T,25>::operator [](int)'
+          with
+          [
+              T=double
+          ]
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.h(17): message : see declaration of 'StaticArray<double,25>::operator []'
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(83): message : see reference to class template instantiation 'StaticArray<double,25>' being compiled
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.h(18,6): error C2040: 'StaticArray<double,25>::operator []': 'T &(int)' differs in levels of indirection from 'T (int)'
+          with
+          [
+              T=double
+          ]
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(91,5): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(91,5): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(96,6): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(96,6): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(97,7): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(97,7): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(98,7): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(98,7): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(101,28): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(101,28): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(102,3): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(102,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(105,29): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(105,29): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(106,3): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(106,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(109,29): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(109,29): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(110,3): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(110,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(113,8): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(113,8): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(116,30): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(116,30): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(117,3): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(117,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(120,30): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(120,30): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(121,3): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(121,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(125,3): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(125,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(126,3): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(126,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(127,3): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(127,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(128,3): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(128,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(134,5): error C2264: 'StaticArray<double,25>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(134,5): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(134,5): error C2678: binary '[': no operator found which takes a left-hand operand of type 'const StaticArray<double,25>' (or there is no acceptable conversion)
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.h(17,5): message : could be 'T StaticArray<T,25>::operator [](int)'
+          with
+          [
+              T=double
+          ]
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(134,5): message : while trying to match the argument list '(const StaticArray<double,25>, int)'
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(141,3): error C2678: binary '[': no operator found which takes a left-hand operand of type 'const StaticArray<double,25>' (or there is no acceptable conversion)
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.h(17,5): message : could be 'T StaticArray<T,25>::operator [](int)'
+          with
+          [
+              T=double
+          ]
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(141,3): message : while trying to match the argument list '(const StaticArray<double,25>, int)'
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(141,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(142,3): error C2678: binary '[': no operator found which takes a left-hand operand of type 'const StaticArray<double,25>' (or there is no acceptable conversion)
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.h(17,5): message : could be 'T StaticArray<T,25>::operator [](int)'
+          with
+          [
+              T=double
+          ]
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(142,3): message : while trying to match the argument list '(const StaticArray<double,25>, int)'
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(142,3): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.h(18,1): error C2556: 'T &StaticArray<T,26>::operator [](int)': overloaded function differs only by return type from 'T StaticArray<T,26>::operator [](int)'
+          with
+          [
+              T=char
+          ]
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.h(17): message : see declaration of 'StaticArray<char,26>::operator []'
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(148): message : see reference to class template instantiation 'StaticArray<char,26>' being compiled
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.h(18,6): error C2040: 'StaticArray<char,26>::operator []': 'T &(int)' differs in levels of indirection from 'T (int)'
+          with
+          [
+              T=char
+          ]
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(156,5): error C2264: 'StaticArray<char,26>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(156,5): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(161,6): error C2264: 'StaticArray<char,26>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(161,6): error C2088: '[': illegal for class
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(162,7): error C2264: 'StaticArray<char,26>::operator []': error in function definition or declaration; function not called
+C:\Users\B5SK\Documents\School\DVC\2020-Spring\COMSC-210 Program Design & Data Structures\Programming Assignments\StaticArrayTemplate\StaticArrayTemplate\StaticArray.TestDriver.cpp(162,7): fatal error C1003: error count exceeds 100; stopping compilation

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var myReq=new XMLHttpRequest();
+
+function timeReq() {
+    //alert ("timeReq");
+    myReq.onreadystatechange=timeRes;
+
+   var theUrl="time.py?";
+
+   var myRand = parseInt(Math.random()*999999999999999);
+
+   theUrl = theUrl +"rand="+myRand;
+
+   myReq.open('GET',theUrl,true);
+   //alert ("mytime2");
+   myReq.send(null);
+   //alert ("mytime3");
+}
+function dateTimeReq() {
+    //alert ("dateTimeReq");
+    myReq.onreadystatechange=timeRes;
+
+   var theUrl="dateTime.py?";
+
+   var myRand = parseInt(Math.random()*999999999999999);
+
+   theUrl = theUrl +"rand="+myRand;
+
+   myReq.open('GET',theUrl,true);
+
+   myReq.send(null)
+}
+function timeRes(){
+    //alert ("timeRes");
+   if(myReq.readyState==4 && myReq.status==200){
+
+      //alert("timeRes1");
+
+      if (myReq.responseXML==null && myReq.responseText==null){
+
+          //alert("null");
+
+          return;
+
+      }
+
+      else if (myReq.responseXML==null && myReq.responseText!=null){
+
+          //alert("responseXML null");
+          var resValue=myReq.responseText;
+
+          //alert(resValue);
+
+      }
+
+      else{
+          // alert("responseXML");
+          var xmldoc = myReq.responseXML;
+
+          var    dateTime=xmldoc.getElementsByTagName("dateTime")[0];
+
+          var resValue=dateTime.childNodes[0].nodeValue;
+
+          alert(resValue);
+
+      }
+      var span=document.getElementsByTagName("span")[0];
+
+      span.innerHTML=resValue;
+
+   }
+}
+</script>
+</head>
+
+<body>
+<span></span><br>
+<button onclick="timeReq()">Current Time</button><br>
+<button onclick="dateTimeReq()">Date and Time</button><br>
+</body>
+
+</html>

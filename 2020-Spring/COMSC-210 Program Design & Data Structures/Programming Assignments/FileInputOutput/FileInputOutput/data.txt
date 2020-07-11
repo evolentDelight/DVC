@@ -1,0 +1,2 @@
+Day:	Mon	Tues	Wed	Thurs
+Temp:	61	61	63	66
